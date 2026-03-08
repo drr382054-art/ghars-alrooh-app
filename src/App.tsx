@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "./sonner";
 import { TooltipProvider } from "./tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { GharsProvider } from "@/stores/useGharsStore";
+import { GharsProvider } from "./useGharsStore";
 import WelcomePage from "./WelcomePage";
 import SeedAnimationPage from "./SeedAnimationPage";
 import HomePage from "./HomePage";
