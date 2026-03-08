@@ -16,7 +16,6 @@ import RamadanPage from "./RamadanPage";
 import RamadanDetailPage from "./RamadanDetailPage";
 import MessagePage from "./MessagePage";
 import NotFound from "./NotFound";
-
 const queryClient = new QueryClient();
 
 const App = () => (
