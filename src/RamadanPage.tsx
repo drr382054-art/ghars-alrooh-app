@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BottomNav from '@/components/BottomNav';
+import BottomNav from './BottomNav';
 
 export default function RamadanPage() {
   const navigate = useNavigate();
