@@ -1,9 +1,9 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
-import TreeSVG from '@/components/TreeSVG';
-import BottomNav from '@/components/BottomNav';
+import { useGhars } from './useGharsStore';
+import TreeSVG from './TreeSVG';
+import BottomNav from './BottomNav';
 
 export default function HomePage() {
   const { user, isLoggedIn, getLeafCount, getConsecutiveDays, getDaysSinceLastActive, getTodayCompletion, toggleDarkMode } = useGhars();
