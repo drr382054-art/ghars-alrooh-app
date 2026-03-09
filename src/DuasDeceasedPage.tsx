@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
+import { useGhars } from './useGharsStore';
 import { duasForDeceased, ancestorNames, charityLinks } from '@/data/duasData';
 
 export default function DuasDeceasedPage() {
