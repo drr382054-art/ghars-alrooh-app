@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import type { Dhikr } from '@/data/adhkarData';
+import type { Dhikr } from './adhkarData';
 
 interface DhikrCardProps {
   dhikr: Dhikr;
