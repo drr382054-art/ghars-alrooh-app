@@ -2,8 +2,8 @@ import { useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import DhikrCard from './DhikrCard';
-import { useGhars } from '@/stores/useGharsStore';
-import { morningAdhkar, eveningAdhkar, afterPrayerAdhkar, sleepAdhkar } from '@/data/adhkarData';
+import { useGhars } from './useGharsStore';
+import { morningAdhkar, eveningAdhkar, afterPrayerAdhkar, sleepAdhkar } from './adhkarData';
 
 const configs: Record<string, { title: string; data: typeof morningAdhkar; bg: string; section: any; completionMsg?: string }> = {
   morning: { title: 'أذكار الصباح', data: morningAdhkar, bg: 'gradient-morning-adhkar', section: 'morning' },
