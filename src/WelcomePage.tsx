@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
-import TreeSVG from '@/components/TreeSVG';
+import { useGhars } from './useGharsStore';
+import TreeSVG from './TreeSVG';
 
 export default function WelcomePage() {
   const { login, isLoggedIn } = useGhars();
