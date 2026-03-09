@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
+import { useGhars } from './useGharsStore';
 
 export default function SeedAnimationPage() {
   const { user, setHasSeenAnimation, isLoggedIn } = useGhars();
