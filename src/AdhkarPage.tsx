@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BottomNav from '@/components/BottomNav';
+import BottomNav from './BottomNav';
 
 const categories = [
   { id: 'morning', label: 'أذكار الصباح', icon: '☀️', gradient: 'from-[#F4F1EA] to-[#E6EFE8]' },
