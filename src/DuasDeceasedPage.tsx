@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGhars } from './useGharsStore';
-import { duasForDeceased, ancestorNames, charityLinks } from '@/data/duasData';
+import { duasForDeceased, ancestorNames, charityLinks } from './duasData';
 
 export default function DuasDeceasedPage() {
   const navigate = useNavigate();
