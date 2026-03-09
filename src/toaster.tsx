@@ -1,24 +1,28 @@
-import { useToast } from "./use-toast";
-import { Toast, ToastClose, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from "./toast";
+import React, { useState } from "react"
 
+// 1. الهوك داخلياً (عشان ما يدور على ملفات ثانية)
+export const useToast = () => {
+  const [toasts, setToasts] = useState<any[]>([])
+  return {
+    toasts,
+    toast: ({ title, description }: { title?: string; description?: string }) => {
+      console.log("Toast:", title, description)
+    },
+  }
+}
+
+// 2. الكومبوننت نفسه
 export function Toaster() {
-  const { toasts } = useToast();
+  const { toasts } = useToast()
 
   return (
-    <ToastProvider>
-      {toasts.map(function ({ id, title, description, action, ...props }) {
-        return (
-          <Toast key={id} {...props}>
-            <div className="grid gap-1">
-              {title && <ToastTitle>{title}</ToastTitle>}
-              {description && <ToastDescription>{description}</ToastDescription>}
-            </div>
-            {action}
-            <ToastClose />
-          </Toast>
-        );
-      })}
-      <ToastViewport />
-    </ToastProvider>
-  );
+    <div className="fixed bottom-0 right-0 p-4 z-[100] flex flex-col gap-2">
+      {toasts.map((toast, index) => (
+        <div key={index} className="bg-white border rounded-lg p-4 shadow-lg">
+          {toast.title && <div className="font-bold">{toast.title}</div>}
+          {toast.description && <div className="text-sm">{toast.description}</div>}
+        </div>
+      ))}
+    </div>
+  )
 }
