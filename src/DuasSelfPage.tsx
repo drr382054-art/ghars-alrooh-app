@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
-import { duasForSelf } from '@/data/duasData';
+import { useGhars } from './useGharsStore';
+import { duasForSelf } from './duasData';
 
 export default function DuasSelfPage() {
   const navigate = useNavigate();
