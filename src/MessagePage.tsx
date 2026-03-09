@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
-import BottomNav from '@/components/BottomNav';
+import { useGhars } from './useGharsStore';
+import BottomNav from './BottomNav';
 
 export default function MessagePage() {
   const { user, addMessage, getAllDatesWithActivity } = useGhars();
