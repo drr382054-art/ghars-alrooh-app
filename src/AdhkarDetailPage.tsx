@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import DhikrCard from '@/components/DhikrCard';
+import DhikrCard from './DhikrCard';
 import { useGhars } from '@/stores/useGharsStore';
 import { morningAdhkar, eveningAdhkar, afterPrayerAdhkar, sleepAdhkar } from '@/data/adhkarData';
 
