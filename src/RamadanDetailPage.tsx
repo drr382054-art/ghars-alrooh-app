@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGhars } from '@/stores/useGharsStore';
-import { ramadanDuas, laylatAlQadrDuas } from '@/data/ramadanData';
+import { useGhars } from './useGharsStore';
+import { ramadanDuas, laylatAlQadrDuas } from './ramadanData';
 
 export default function RamadanDetailPage() {
   const { type } = useParams<{ type: string }>();
